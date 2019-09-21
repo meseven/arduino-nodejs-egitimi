@@ -20,7 +20,14 @@
 			client.on('message', function(topic, message) {
 				console.log(topic, ' : ', message.toString());
 			});
+
+			function led(value) {
+				client.publish('led', value);
+			}
 		</script>
 	</head>
-	<body></body>
+	<body>
+		<button onclick="led('1')">Led On</button>
+		<button onclick="led('0')">Led Off</button>
+	</body>
 </html>
