@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>MQTT Client</title>
+		<script src="https://unpkg.com/mqtt@3.0.0/dist/mqtt.min.js"></script>
+		<script>
+			var client = mqtt.connect('ws://localhost:3000');
+
+			client.subscribe('new-user');
+
+			client.on('connect', function() {
+				console.log('connected!');
+
+				client.publish('new-user', 'From Browser Client');
+			});
+
+			client.on('message', function(topic, message) {
+				console.log(topic, ' : ', message.toString());
+			});
+		</script>
+	</head>
+	<body></body>
+</html>
