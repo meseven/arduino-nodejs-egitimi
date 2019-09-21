@@ -10,6 +10,10 @@ server.on('clientConnected', function(client) {
 	console.log('client connected', client.id);
 });
 
+server.on('clientDisconnected', function(client) {
+	console.log('client disconnected -', client.id);
+});
+
 // fired when a message is received
 server.on('published', function(packet, client) {
 	console.log('Published', packet.payload);
