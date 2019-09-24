@@ -7,6 +7,7 @@ client.subscribe('led');
 client.on('connect', function() {
 	console.log('connected!');
 
+	client.publish('led', 'on');
 	client.publish('new-user', 'Mehmet-' + Math.ceil(Math.random() * 10));
 });
 

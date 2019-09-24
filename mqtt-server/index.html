@@ -7,9 +7,10 @@
 		<title>MQTT Client</title>
 		<script src="https://unpkg.com/mqtt@3.0.0/dist/mqtt.min.js"></script>
 		<script>
-			var client = mqtt.connect('ws://localhost:3000');
+			var client = mqtt.connect('ws://157.230.113.66:3000');
 
 			client.subscribe('new-user');
+			client.subscribe('TEMP');
 
 			client.on('connect', function() {
 				console.log('connected!');
@@ -19,15 +20,26 @@
 
 			client.on('message', function(topic, message) {
 				console.log(topic, ' : ', message.toString());
+
+				switch (topic) {
+					case 'TEMP':
+						document.getElementById('temp').innerHTML = message.toString();
+						break;
+
+					default:
+						break;
+				}
 			});
 
 			function led(value) {
-				client.publish('led', value);
+				client.publish('LED', value);
 			}
 		</script>
 	</head>
 	<body>
-		<button onclick="led('1')">Led On</button>
-		<button onclick="led('0')">Led Off</button>
+		<button onclick="led('on')">Led On</button>
+		<button onclick="led('off')">Led Off</button>
+
+		<div style="padding: 10px">Sıcaklık: <strong id="temp"></strong></div>
 	</body>
 </html>
