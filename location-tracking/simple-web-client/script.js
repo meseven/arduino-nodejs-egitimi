@@ -2,11 +2,10 @@ var map, marker;
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: { lat: -34.397, lng: 150.644 },
-		zoom: 8,
+		zoom: 18,
 	});
 
 	marker = new google.maps.Marker({
-		position: { lat: -34.397, lng: 150.644 },
 		map,
 	});
 }
@@ -26,8 +25,9 @@ client.on('message', function(topic, message) {
 		case 'LOCATION':
 			[lat, lng, altitude, speed, course] = message.toString().split(',');
 
-			marker.setPosition({ lat: parseFloat(lat), lng: parseFloat(lng) });
-
+			let position = { lat: parseFloat(lat), lng: parseFloat(lng) };
+			marker.setPosition(position);
+			map.setCenter(position);
 			break;
 		default:
 			break;
