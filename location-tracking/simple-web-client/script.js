@@ -5,7 +5,18 @@ function initMap() {
 		zoom: 18,
 	});
 
+	var symbol = {
+		// url: 'car.png',
+		path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+		fillColor: 'red',
+		fillOpacity: 0.9,
+		strokeWeight: 6,
+		scale: 8,
+		rotation: 0,
+	};
+
 	marker = new google.maps.Marker({
+		icon: symbol,
 		map,
 	});
 }
@@ -35,6 +46,7 @@ function changeMap(message) {
 
 	let position = { lat: parseFloat(lat), lng: parseFloat(lng) };
 	marker.setPosition(position);
+	marker.icon.rotation = course;
 	map.setCenter(position);
 
 	document.getElementById('km').innerHTML = speed;
