@@ -23,13 +23,20 @@ client.on('message', function(topic, message) {
 	console.log(topic, ' : ', message.toString());
 	switch (topic) {
 		case 'LOCATION':
-			[lat, lng, altitude, speed, course] = message.toString().split(',');
-
-			let position = { lat: parseFloat(lat), lng: parseFloat(lng) };
-			marker.setPosition(position);
-			map.setCenter(position);
+			changeMap(message);
 			break;
 		default:
 			break;
 	}
 });
+
+function changeMap(message) {
+	[lat, lng, altitude, speed, course] = message.toString().split(',');
+
+	let position = { lat: parseFloat(lat), lng: parseFloat(lng) };
+	marker.setPosition(position);
+	map.setCenter(position);
+
+	document.getElementById('km').innerHTML = speed;
+	document.getElementById('msl').innerHTML = altitude;
+}

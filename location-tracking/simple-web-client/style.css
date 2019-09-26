@@ -1,5 +1,19 @@
+#map-container {
+	height: 100%;
+	position: relative;
+}
 #map {
 	height: 100%;
+}
+#info {
+	position: absolute;
+	text-align: center;
+	bottom: 5%;
+	left: 0;
+	background-color: aliceblue;
+	padding: 10px;
+	opacity: 0.9;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Optional: Makes the sample page fill the window. */
 html,
