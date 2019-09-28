@@ -34,19 +34,19 @@ client.on('message', function(topic, message) {
 	console.log(topic, ' : ', message.toString());
 	switch (topic) {
 		case 'LOCATION':
-			changeMap(message);
+			updateMap(message);
 			break;
 		default:
 			break;
 	}
 });
 
-function changeMap(message) {
+function updateMap(message) {
 	[lat, lng, altitude, speed, course] = message.toString().split(',');
 
 	let position = { lat: parseFloat(lat), lng: parseFloat(lng) };
 	marker.setPosition(position);
-	marker.icon.rotation = course;
+	marker.setIcon({ ...marker.getIcon(), rotation: parseInt(course) });
 	map.setCenter(position);
 
 	document.getElementById('km').innerHTML = speed;
