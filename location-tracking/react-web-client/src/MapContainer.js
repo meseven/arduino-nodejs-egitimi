@@ -1,5 +1,5 @@
 import React from 'react';
-import {GoogleApiWrapper, Map} from 'google-maps-react';
+import {GoogleApiWrapper, Map, Marker} from 'google-maps-react';
 
 export class MapContainer extends React.Component {
 	render(){
@@ -8,12 +8,24 @@ export class MapContainer extends React.Component {
 				<Map
           google={this.props.google}
           initialCenter={{
-            lat: 40.854885,
-            lng: -88.081807
+						lat: 47.444, 
+						lng: -122.176
           }}
-          zoom={12}
+          zoom={18}
           onClick={this.onMapClicked}
-        />
+        >
+					<Marker
+						icon= {{
+							path: window.google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+							fillColor: 'red',
+							fillOpacity: 0.9,
+							strokeWeight: 6,
+							scale: 8,
+							rotation: 0,
+						}}
+						position={{ lat: 47.444, lng: -122.176 }}
+					/>
+				</Map>
 			</div>
 		)
 	}
