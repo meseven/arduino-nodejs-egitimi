@@ -1,7 +1,30 @@
 import React from 'react';
 import {GoogleApiWrapper, Map, Marker} from 'google-maps-react';
 
+import mqtt from 'mqtt';
+
 export class MapContainer extends React.Component {
+	componentDidMount() {
+		var client = mqtt.connect('ws://157.230.113.66:3000');
+
+		client.subscribe('LOCATION');
+
+		client.on('connect', function() {
+			console.log('connected!');
+		});
+
+		client.on('message', function(topic, message) {
+			console.log(topic, ' : ', message.toString());
+			switch (topic) {
+				case 'LOCATION':
+					// updateMap(message);
+					break;
+				default:
+					break;
+			}
+		});
+	}
+	
 	render(){
 		return(
 			<div style={{ width: '100%', height: '100%' }}>
@@ -12,7 +35,6 @@ export class MapContainer extends React.Component {
 						lng: -122.176
           }}
           zoom={18}
-          onClick={this.onMapClicked}
         >
 					<Marker
 						icon= {{
