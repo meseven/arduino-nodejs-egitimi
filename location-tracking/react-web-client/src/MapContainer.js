@@ -6,7 +6,10 @@ import mqtt from 'mqtt';
 export class MapContainer extends React.Component {
 	state = {
 		lat: -34.397, 
-		lng: 150.644
+		lng: 150.644,
+		altitude: 0,
+		speed: 0, 
+		course: 0
 	}
 
 	updateMap(message){
@@ -14,7 +17,10 @@ export class MapContainer extends React.Component {
 
 		this.setState({
 			lat,
-			lng
+			lng,
+			altitude,
+			speed, 
+			course
 		})
 	}
 
@@ -38,7 +44,7 @@ export class MapContainer extends React.Component {
 	}
 	
 	render(){
-		const {lat,lng} = this.state;
+		const {lat,lng, altitude, speed, course } = this.state;
 		return(
 			<div style={{ width: '100%', height: '100%' }}>
 				<Map
@@ -60,11 +66,16 @@ export class MapContainer extends React.Component {
 							fillOpacity: 0.9,
 							strokeWeight: 6,
 							scale: 8,
-							rotation: 0,
+							rotation: parseFloat(course),
 						}}
 						position={{ lat, lng }}
 					/>
 				</Map>
+
+				<div id="info">
+					<h2>{speed} km/h</h2>
+					<h2>{altitude} msl</h2>
+				</div>
 			</div>
 		)
 	}
