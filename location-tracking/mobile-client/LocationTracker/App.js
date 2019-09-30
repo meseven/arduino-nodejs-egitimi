@@ -70,8 +70,26 @@ export default class App extends Component {
 							longitude: lng,
 						}}
 						image={require('./assets/arrow.png')}
+						style={{
+							transform: [
+								{
+									rotate: course + 'deg',
+								},
+							],
+						}}
 					/>
 				</MapView>
+
+				<View style={styles.info}>
+					<Text style={styles.value}>
+						{speed}
+						<Text style={styles.text}> km/h</Text>
+					</Text>
+					<Text style={[styles.value, styles.msl]}>
+						{altitude}
+						<Text style={styles.text}> msl</Text>
+					</Text>
+				</View>
 			</View>
 		);
 	}
@@ -80,5 +98,22 @@ export default class App extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+	},
+	info: {
+		backgroundColor: '#e1e1e1',
+		position: 'absolute',
+		padding: 25,
+		opacity: 0.5,
+		left: 0,
+		bottom: 100,
+	},
+	value: {
+		fontSize: 30,
+	},
+	msl: {
+		fontSize: 18,
+	},
+	text: {
+		fontSize: 14,
 	},
 });
