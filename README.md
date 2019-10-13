@@ -1,4 +1,4 @@
-# arduino-nodejs-egitimi
+# Arduino & Node.JS ile GSM Tabanlı Konum Takip Proje Tasarımı Eğitimi
 
 ![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/10/arduino-nodejs-mehmet-seven-emre-konca-egitim.jpg)
 
