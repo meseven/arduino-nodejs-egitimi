@@ -1,5 +1,7 @@
 ## Arduino & Node.JS ile GSM Tabanlı Konum Takip Proje Tasarımı Eğitimi
 
+[Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=ARDNJS)
+
 ![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/10/arduino-nodejs-mehmet-seven-emre-konca-egitim.jpg)
 
 ## Arduino
@@ -28,7 +30,7 @@ React Native; mobil işletim sistemleri için kararlı ve yüksek performanslı 
 
 ## MQTT
 
-Arduino ve GSM kullanarak MQTT client'ı oluşturmanın bir çok sorunlu yanı var. Bu sorunları aşıp sorunsuz çalışan bir sistem tasarımını öğreneceksiniz. Hem donanım hem Arduino yazılımını öğreneceksiniz. 
+Arduino ve GSM kullanarak MQTT client'ı oluşturmanın bir çok sorunlu yanı var. Bu sorunları aşıp sorunsuz çalışan bir sistem tasarımını öğreneceksiniz. Hem donanım hem Arduino yazılımını öğreneceksiniz.
 
 ## Pil Yönetim Sistemi
 
