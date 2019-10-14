@@ -43,3 +43,5 @@ TinkerCAD ile hızlı bir şekilde 3 boyutlu modellemeye giriş yapacaksınız. 
 ## 3D Baskı
 
 3D modelimizi 3 boyutlu yazıcı ile basıp kullanacağız. Bu kapsamda 3D yazıcı ve 3D model arasındaki bağlantı ve tasarımda dikkat edilmesi gerekenleri öğreneceksiniz. Projemizdeki konum takip cihazına bir de kutu yapacağız.
+
+[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=ARDNJS)
