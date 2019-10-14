@@ -1,6 +1,6 @@
 ## Arduino & Node.JS ile GSM Tabanlı Konum Takip Proje Tasarımı Eğitimi
 
-[Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=ARDNJS)
+[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=ARDNJS)
 
 ![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/10/arduino-nodejs-mehmet-seven-emre-konca-egitim.jpg)
 
