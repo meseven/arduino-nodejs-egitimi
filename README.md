@@ -1,6 +1,6 @@
 ## Arduino & Node.JS ile GSM Tabanlı Konum Takip Proje Tasarımı Eğitimi
 
-[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=ARDNJS)
+[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=BF_2019)
 
 ![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/10/arduino-nodejs-mehmet-seven-emre-konca-egitim.jpg)
 
@@ -44,4 +44,4 @@ TinkerCAD ile hızlı bir şekilde 3 boyutlu modellemeye giriş yapacaksınız. 
 
 3D modelimizi 3 boyutlu yazıcı ile basıp kullanacağız. Bu kapsamda 3D yazıcı ve 3D model arasındaki bağlantı ve tasarımda dikkat edilmesi gerekenleri öğreneceksiniz. Projemizdeki konum takip cihazına bir de kutu yapacağız.
 
-[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=ARDNJS)
+[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=BF_2019)
