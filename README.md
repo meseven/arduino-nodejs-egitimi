@@ -1,8 +1,11 @@
 ## Arduino & Node.JS ile GSM Tabanlı Konum Takip Proje Tasarımı Eğitimi
 
-[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=BF_2019)
+[:point_right: Kursa katılmak için tıklayın.](http://bit.ly/arduinode_)
 
-![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/10/arduino-nodejs-mehmet-seven-emre-konca-egitim.jpg)
+
+
+![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/11/cover-new2.jpg)
+
 
 ## Arduino
 
@@ -28,6 +31,8 @@ Web sayfalarınızda güçlü kullanıcı deneyimi sunmak istediğinizde yardım
 
 React Native; mobil işletim sistemleri için kararlı ve yüksek performanslı uygulamalar geliştirmek istediğinizde aynı kod ile IOS ve Android ortamlarına uygulama çıkarabilen harika bir araç. Kurs içerisinde React Native'i kullanarak mobil uygulamalarımızı da geliştiriyoruz. Kullandığınızda çok seveceksiniz :)
 
+![arduino nodejs eğitimi mehmet seven emre konca](https://mehmetseven.net/content/images/2019/10/arduino-nodejs-mehmet-seven-emre-konca-egitim.jpg)
+
 ## MQTT
 
 Arduino ve GSM kullanarak MQTT client'ı oluşturmanın bir çok sorunlu yanı var. Bu sorunları aşıp sorunsuz çalışan bir sistem tasarımını öğreneceksiniz. Hem donanım hem Arduino yazılımını öğreneceksiniz.
@@ -44,4 +49,4 @@ TinkerCAD ile hızlı bir şekilde 3 boyutlu modellemeye giriş yapacaksınız. 
 
 3D modelimizi 3 boyutlu yazıcı ile basıp kullanacağız. Bu kapsamda 3D yazıcı ve 3D model arasındaki bağlantı ve tasarımda dikkat edilmesi gerekenleri öğreneceksiniz. Projemizdeki konum takip cihazına bir de kutu yapacağız.
 
-[:point_right: Kursa katılmak için tıklayın.](https://www.udemy.com/course/arduino-gsm-node/?couponCode=BF_2019)
+[:point_right: Kursa katılmak için tıklayın.](http://bit.ly/arduinode_)
